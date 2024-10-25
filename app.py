@@ -4,10 +4,10 @@ from flask import Flask, jsonify, request, send_file, send_from_directory
 app = Flask(__name__)
 
 # Model files paths
-faceProto = r"C:\Users\vishn\k\test\opencv_face_detector.pbtxt"
-faceModel = r"C:\Users\vishn\k\test\opencv_face_detector_uint8.pb"
-ageProto = r"C:\Users\vishn\k\test\age_deploy.prototxt"
-ageModel = r"C:\Users\vishn\k\test\age_net.caffemodel"
+faceProto = r"opencv_face_detector.pbtxt"
+faceModel = r"opencv_face_detector_uint8.pb"
+ageProto = r"age_deploy.prototxt"
+ageModel = r"age_net.caffemodel"
 
 MODEL_MEAN_VALUES = (78.4263377603, 87.7689143744, 114.895847746)
 ageList = ['(0-2)','(0-4)','(8-12)','(15-20)','(20-25)','(25-30)','(30-40)','(40-50)','(60-80)','(80-100)']
