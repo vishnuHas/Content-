@@ -37,7 +37,7 @@ def highlightFace(net, frame, conf_threshold=0.7):
     return frameOpencvDnn, faceBoxes
 
 def generate_frames():
-    video = cv2.VideoCapture(0)
+    video = cv2.VideoCapture(1)
     padding = 20
 
     while True:
